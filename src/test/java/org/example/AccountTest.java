@@ -36,7 +36,7 @@ class AccountTest {
         assertEquals(250, account1.checkBalance(), "Transfer failed: account1 balance should be 250.");
         assertEquals(150, account2.checkBalance(), "Transfer failed: account2 balance should be 150.");
 
-        account1.transfer(400, account2); // Exceeds balance
+        account1.transfer(400, account2);
         assertEquals(250, account1.checkBalance(), "Transfer failed: account1 balance should remain 250.");
         assertEquals(150, account2.checkBalance(), "Transfer failed: account2 balance should remain 150.");
     }
