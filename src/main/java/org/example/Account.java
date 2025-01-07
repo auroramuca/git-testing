@@ -16,8 +16,9 @@ public class Account {
              balance+=amount;
         }
     }
-    public void checkBalance(){
-        System.out.println("Your balance is: " + balance);
+    public double checkBalance(){
+        System.out.println("Your balance is: ");
+        return balance;
     }
     public void transfer(double amount, Account anotherAccount){
         if(anotherAccount != null && amount>0 && amount<=balance){
